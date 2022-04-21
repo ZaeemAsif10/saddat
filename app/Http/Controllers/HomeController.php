@@ -16,6 +16,11 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
+    public function redirectAdmin()
+    {
+        return redirect()->route('dashboard');
+    }
+
     /**
      * Show the application dashboard.
      *
